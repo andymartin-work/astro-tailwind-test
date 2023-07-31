@@ -1,0 +1,26 @@
+---
+// Component Imports
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+import SAE from '../SAE.jpg'
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>testing</title>
+	  </head>  
+
+	  <body>
+
+    <Hero Name="test" Description="description" />
+	<Card name="test" description="asdf" img={SAE}/>
+		</body>
+
+</html>
