@@ -1,0 +1,276 @@
+---
+// Component Imports
+import Project from "../layouts/Project.astro";
+import { Image } from 'astro:assets';
+---
+
+<body>
+
+  <!-- navbar -->
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <nav class="bg-transparent navnormal transition ease-in-out delay-150 pt-8" id="navbar">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        
+        <div class="flex-1 flex items-left justify-left sm:items-stretch sm:justify-start">
+          <div>
+            <a href="index.html"><Image src="/assets/M-b.png" alt="photo" width="80" height="80"/></a>
+    
+          </div>
+          <div class="sm:block sm:ml-4 mt-3 mytext font-bold">
+            <div class="flex space-x-4 text-l">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+  
+
+              
+              <a href="/" class="text-gray-900 hover:underline px-3 py-2 rounded-md font-medium">
+                
+            </a>
+
+              <a href="index.html#1" class="text-gray-900 hover:underline px-3 py-2 rounded-md font-medium">Portfolio</a>
+  
+              <a href="about.html" class="text-gray-900  hover:underline px-3 py-2 rounded-md font-medium">About</a>
+  
+              <a href="#" class="text-gray-900  hover:underline px-3 py-2 rounded-md font-medium">Contact</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    
+    </div>
+  </nav>
+  
+  
+    
+      
+        
+        
+        <!-- hero -->
+        <article class="px-4 py-10 mx-auto" itemid="#" >
+          <div class="flex flex-col items-center justify-center">
+            <div class="w-full mx-auto text-left md:w-3/4 lg:w-1/2 pb-10">
+            <Image src="/assets/GF_Mockup.jpg" alt="photo" width="200" height="200" class="w-full mx-auto pb-10"/>
+            
+                <h1 class="mb-3 text-5xl font-bold leading-tight text-gray-900"></h1>
+                Gluten-Free Food Preparation
+                </h1>
+            
+          </div>
+        
+          <div class="mytext w-full mx-auto prose md:w-3/4 lg:w-1/2 max-w-7xl">
+            <p class="text-3xl mb-12 myfont italic">A scenario-based eLearning experience</p>
+            <p class="mb-6">This scenario-based eLearning experience helps train restaurant staff members to safely prepare and handle gluten-free food. It provides specific strategies that kitchen staff members can utilize, with an emphasis on hygiene and communication. <!--Learner behaviors are tracked and reported via xAPI.--></p>
+            <p class="mb-4"><span class="font-bold text-lg">Audience: </span>New members of kitchen or service staff at a restaurant</p>
+            <p class="mb-4"><span class="font-bold text-lg">Responsibilities: </span>Instructional Design, eLearning Development, Graphic Design</p>
+            <p class="mb-6"><span class="font-bold text-lg">Tools Used: </span>Articulate Storyline 360, Figma, GIMP, Visual Studio Code, Google Docs</p>
+            <button class="mb-6 btn text-white bg-blue-700 ml-4 inline-flex py-2 px-6 hover:bg-blue-700 text-lg normal-case transition ease-in-out delay-150 hover:scale-110"><a href="/gf/story.html" target="_blank" rel="noopener"> Experience the project</a></button>
+            <h2 class="mt-6 mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl mytext">
+              Problem & Solution
+            </h2>
+            <p class="mt-6">The client is Gus’s Kitchen, a restaurant located next door to a dedicated gluten-free brewery. Gus's would like to partner with the brewery and serve food next door, but their current food safety protocols do not include gluten-free food preparation. The brewery will only agree to partner with Gus’s Kitchen if they agree to take necessary steps to ensure food safety for their customers.</p>
+            <p class="mt-6">New and seasonal restaurant workers have little experience dealing with the specifics of this type of dietary restriction. Managers at both establishments have received complaints that Gus’s current gluten-free offerings have made customers with a gluten allergy sick. As a result, regular patrons of the brewery following a gluten-free diet refuse to eat at Gus’s. </p>
+            <p class="mt-6">In order for Gus’s Kitchen to expand their clientele to include these regular patrons of the brewery, they need to establish themselves as a reputable and safe option for the gluten-free community. There is a large amount of trust involved for these patrons, and even small mistakes can drive a customer away for good. Providing thoughtful accommodation and positive experiences will help Gus’s develop and maintain strong customer relationships that are essential to the business’s success.
+            <p class="mt-6">I developed scenario-based eLearning that allows restaurant staff to make decisions about gluten-free food preparation in a risk-free environment. Scenario-based eLearning highlights the real-world consequences of common mistakes in a memorable way, and provides a space for employees to practice following the correct protocol.</p>
+            <h2 class="text-3xl font-bold leading-tight text-gray-900 md:text-4xl mt-8 mytext">Process</h2>
+                              <p class="mt-6">I adhere to a medically prescribed gluten-free diet, so I acted as the Subject Matter Expert (SME) for this project. I defined the goal and identified the specific steps that kitchen and service staff should take while preparing gluten-free food.</p>
+                              <p class="mt-6">I developed an action map that highlights the specifics of each food preparation step, including customer interaction. Afterwards, I created a text-based storyboard and began working on visual mockups in Figma for the scenario-based eLearning experience. I used GIMP to create visual assets.</p>
+                              <p class="mt-6">I created a visual storyboard in Figma to see how the text and images would work together, and illustrate the overall flow of the experience. Afterwards, I fully developed the project in Articulate Storyline 360. </p>
+                              <!--<p class="mt-6">I collected data on the learning experience by implementing custom xAPI to track responses, as well as determine if the learner utilized the help button. This is useful for understanding where employees may be struggling most in the food preparation process.</p>-->
+                              <h2 class="text-3xl font-bold leading-tight text-gray-900 md:text-4xl mt-8 mytext">Action Map</h2>
+                              <p class="my-6">Acting as SME, I identifed actions that kitchen and service staff would need to take to prepare gluten-free food successfully. I developed the action map to define the overall goal, while making sure each action tied back to the business need.</p>
+  
+            
+                              <img  class="md:px-3" src="img/mindmap.jpg" alt="" />
+            </div>
+                <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2 max-w-7xl">
+                              <h2 class="text-3xl font-bold leading-tight text-gray-900 md:text-4xl mt-8 mytext">Text-Based Storyboard</h2>
+                              <p class="mt-6">Once the action map was approved and defined specifics, I developed a text-based storyboard to create the choices and the consequences. As the learner goes through the scenario, each question slide proposes three options. Questions were crafted to be tricky in order to emphasize the subtle attention to detail and care needed to prepare gluten-free food. </p>
+                              <p class="my-6">If the learner chooses the correct action, they will progress in the scenario. If they choose the wrong action, the learner will see the real-life consequences of losing a customer. Afterwards, the learner can click the “try again” button. At any time during the scenario, the learner can seek help from a question bubble before selecting their choice.</p>
+                
+                              <img class="md:px-3" src="img/storyboard.png" alt="" />
+              </div>
+  
+  
+                <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2 max-w-7xl">
+                              <h2 class="text-3xl leading-tight text-gray-900 md:text-4xl mt-8 mytext"><span class="font-bold">Visual Mockups:</span> Figma, GIMP</h2>
+                              <p class="mt-6">With my text-based storyboard outlined, I moved into creating mockups for the scenario-based eLearning. I used a clean and bright color scheme with additional supporting colors, typefaces, and stock photography.</p>
+                              <p class="my-6">I used GIMP and Figma to manipulate photos, infographics, and vector graphics to create custom visuals for the project. I used the entire canvas to immerse the learner in a kitchen environment. </p>
+  </div>
+                <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2 max-w-6xl mytext">
+                  <h2 class="text-2xl leading-tight text-gray-900 md:text-3xl mt-8"><span class="font-bold mytext">Color Scheme</span></h2>
+                    <div class="grid grid-cols-5">
+                      <div style="background-color: #CFDBD5;"class="w-full h-40">
+    
+                      </div>
+    
+                      <div style="background-color: #E8EDDF;"class="w-full">
+    
+                      </div>
+    
+                      <div style="background-color: #F5CB5C;"class="w-full">
+    
+                      </div>
+    
+                      <div style="background-color: #242423;"class="w-full">
+    
+                      </div>
+  
+                      <div style="background-color: #333533;"class="w-full">
+    
+                      </div>
+    
+                    </div>
+                    <h2 class="text-2xl leading-tight text-gray-900 md:text-3xl mt-8"><span class="font-bold mytext">Question Slide</span></h2>
+                    <img class="" src="img/qslide-nh.png" alt="" />
+  
+                    <h2 class="text-2xl leading-tight text-gray-900 md:text-3xl mt-8"><span class="font-bold mytext">Correct Answer</span></h2>
+                    <img class="" src="img/correct.png" alt="" />
+  
+                    <h2 class="text-2xl leading-tight text-gray-900 md:text-3xl mt-8"><span class="font-bold mytext">Info Slide</span></h2>
+                    <img class="" src="img/commonqs.png" alt="" />
+  
+                    <h2 class="text-2xl leading-tight text-gray-900 md:text-3xl mt-8"><span class="font-bold mytext">Full Slide Asset</span></h2>
+                    <img class="" src="img/knife.png" alt="" />
+  
+                   
+                
+  
+  
+  <h2 class="text-3xl leading-tight text-gray-900 md:text-4xl mt-8 mytext"><span class="font-bold">Full Development:</span> Articulate Storyline 360, GIMP</h2>
+                              <p class="mt-6">I developed the final project in Articulate Storyline 360, with the addition of GIMP for image manipulation.</p>
+  
+  
+                <button class="mt-6 btn text-white bg-blue-700 ml-4 inline-flex py-2 px-6 hover:bg-blue-700 text-lg normal-case transition ease-in-out delay-150 hover:scale-110 mytext"><a href="/gf/story.html" target="_blank" rel="noopener"> Experience the project</a></button>
+  
+  
+  
+          
+               
+                  <h3 class="text-2xl md:text-3xl leading-tight text-gray-900 mt-8"><span class="font-bold mytext">Features</h3>
+  
+                    <div class="ml-8">
+                    
+                    <ul class="list-disc">
+                      <li>
+                      <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                        <span class="ml-3"><span class="font-bold">Custom Visuals: </span>I edited stock photography to create custom visuals. Each image was selected to illustrate an important action or event occurring in the restaurant.</span>
+                      </span>
+                      </li>
+  
+                      <li>
+                        <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                          <span class="ml-3"><span class="font-bold">Reactive Elements: </span>Information slides feature interactive elements like hover events and click events. On some slides, learners are prompted to use their device input to reveal chronological information. Other slides prompt learners to reveal information by clicking on information cards before proceeding.</span>
+                        </span>
+                        </li>
+  
+                        <li>
+                          <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                            <span class="ml-3"><span class="font-bold">Choice Feedback: </span>As the learner navigates the experience, they receive feedback for their choices. Correct answers are clealy rewarded with a golden checkmark and congratulatory text. Incorrect answers present a red "X" and color-shifted stock photography that illustrate the gravity of an taking the wrong actions when preparing gluten-free food. When a learner answers a question incorrectly, they are prompted to try the question again.
+  
+                          </span>
+  
+  
+                          </span>
+                          </li>
+  
+                          <li>
+                            <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                              <span class="ml-3"><span class="font-bold">Hint Bubble: </span>The learner has access to a hint bubble to assist them during question portions of the experience.
+               
+                            </span>
+    
+                            </span>
+                            </li>
+  
+                    </div>
+  
+                </div>
+  
+                <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2 max-w-7xl mytext">
+                  <h2 class="text-3xl leading-tight text-gray-900 md:text-4xl mt-8 font-bold mytext">Reflection</h2>
+                  
+  
+                  <p class="my-6">Finishing this project provided me with several key takeaways:</p>
+  
+                  <div class="ml-8">
+                    
+                    <ul class="list-disc">
+                      <li>
+                      <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                        <span class="ml-3"><span class="font-bold">Articulate Storyline 360: </span>This project emphasized the importance of implementing timeline manipulation, conditions, variables, states, custom motion paths, as well as some other tricks. I learned to use idiosyncratic features of Storyline to my advantage — for example, on some slides I animated informational text outwards from a single line in the middle of the page. Animation origin is not a setting available by default in Articulate Storyline 360, however, I was able to implement it by using invisible scroll panels to control visibility of the text.
+                  
+                      </span>
+                      </span>
+                      </li>
+                      
+  
+                        <li>
+                          <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                            <span class="ml-3"><span class="font-bold">User Experience (UX): </span>Page layout and transition animations in this project were designed to be accessible across devices with different screen sizes and input types. I believe in designing a clear, familiar user experience. 
+                          </span>
+                          </span>
+                          </li>   
+                          
+                          <li>
+                            <span class="mt-6 flex flex-row items-start justify-start mb-2 md:mb-3">
+                              <span class="ml-3"><span class="font-bold">Project Scope: </span>During my action map planning, I identified actions that a restaurant should take to maintain gluten-free food safety. Some of these actions ended up being outside of the scope of this training scenario. These actions included implementing a menu redesign, as well as auditing ingredients and suppliers at a regular interval.
+                            </span>
+                            </span>
+                            </li>                      
+                          </ul>
+                          </div>
+  
+                  <p class="my-6">As an instructional designer, I had fun planning and organizing all phases of this project. Gluten-free food safety is important to me — I'm excited to share my knowledge with others who may not be aware of the diet's characteristics.</p>
+  
+                  <button class="mb-6 btn text-white bg-blue-700 ml-4 inline-flex py-2 px-6 hover:bg-blue-700 text-lg normal-case transition ease-in-out delay-150 hover:scale-110 mytext"><a href="/gf/story.html" target="_blank" rel="noopener"> Connect with me</a></button>
+                  </div>
+                 
+  
+                  <h3 class="pt-20 text-2xl md:text-3xl leading-tight text-gray-900 mt-8 myfont md:ml-20 ml-4"><span class="font-bold">Check out another project:</h3>
+  
+  
+                  
+        </article>
+        
+  
+  <!-- portfolio -->
+  <section class="text-gray-900 body-font">
+    <div class="container pb-10 px-5 mx-auto reveal fade-bottom">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="group rounded-lg h-64 overflow-hidden relative">
+            <a href = "scales-project.html" class="absolute inset-0 z-10 bg-blue-700 text-center flex flex-col items-center justify-center opacity-0 group-hover:opacity-90 bg-opacity-90 duration-300 text-3xl text-white">
+              <h1  class=tracking-wider >Scales Are Easy</h1>
+              <p  class="mx-auto italic text-lg">HTML, CSS, Javascript, GIMP, Figma, Visual Studio Code, Google Docs</p></a>
+            <a href="#">
+              <img title="test" class="object-cover object-center h-full w-full transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 group-hover:opacity-50" src="img/ScalesAreEasy_Mockup_1201x1201.jpg"></a></img>
+              
+          </div>
+        </div>
+  
+       
+  
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    <!-- Call to action -->
+    <section class="text-white bg-blue-700">
+      <div class="flex flex-col items-stretch justify-between px-4 py-20 mx-auto max-w-7xl lg:flex-row sm:items-center">
+        <div>
+          <h2 class="mb-1 text-xl font-semibold text-left sm:text-2xl sm:text-center lg:text-left mytext">Let's make an impact.</h2>
+          <p class="mb-6 text-lg font-normal text-left text-gray-200 sm:text-xl lg:mb-0 sm:text-center lg:text-left mytext">Hire me to build your next effective learning experience.</p>
+        </div>
+        <div class="flex flex-col mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
+          <button class="btn bg-white text-black hover:bg-gray-900 hover:text-white inline-flex py-2 px-6 text-lg mytext normal-case transition ease-in-out delay-150 hover:scale-110">Connect with Andy</button>
+        </div>
+      </div>
+    </section>
+
+</body>

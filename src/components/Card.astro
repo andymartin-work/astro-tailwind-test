@@ -2,12 +2,18 @@
 const props = Astro.props
 ---
 
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img src={props.img}class="w-full" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{props.name}</div>
-      <p class="text-gray-700 text-base">
-       {props.description}
-      </p>
-    </div>
+<div class="sm:w-1/2 mb-10 last:mb-0 px-4">
+  <div class="group rounded-lg h-[32rem]  overflow-hidden relative">
+    
+    <a href = "gf-food.html" class="absolute inset-0 z-10 bg-blue-700 text-center flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-opacity-75 duration-300 text-3xl text-white">
+      
+      <h1  class=tracking-wider >{props.name}</h1>
+      
+      <p  class="mx-auto italic text-lg">{props.description}</p></a>
+    
+      <a href="#">
+      
+        <img src={props.img} title="test" class="object-cover object-center h-full w-full" ></a></img>
+      
   </div>
+</div>

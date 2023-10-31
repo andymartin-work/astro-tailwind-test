@@ -1,26 +1,37 @@
 ---
 // Component Imports
-import Hero from "../components/Hero.astro";
+import Header from "../layouts/Header.astro";
+import Hero from "../layouts/Hero.astro";
 import Card from "../components/Card.astro";
-import SAE from '../SAE.jpg'
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import Footer from "../layouts/Footer.astro";
+import { Image } from 'astro:assets';
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>testing</title>
-	  </head>  
 
-	  <body>
 
-    <Hero Name="test" Description="description" />
-	<Card name="test" description="asdf" img={SAE}/>
-		</body>
+<body>
 
+	<!--Header -->
+	<Header title="Andy Martin - Developer"/>
+
+	<!--Hero -->
+	<Hero name="Andy." description="I design powerful learning experiences"/>
+	<span id="cycle"></span>
+
+	<!-- Portfolio -->
+	<section class="text-gray-900 body-font mytext" id="#portfolio">
+		<div class="container px-5 py-24 mx-auto">
+			<p style="font-family: 'Palatino', sans-serif;" class="text-3xl lg:text-5xl pb-2">Recent Work</p>
+				
+			<!--Cards -->
+			<div class="flex flex-wrap -mx-4 -mb-10 text-center">
+				<Card name="test" description="asdf" img={}/>
+				<Card name="test" description="asdf" img={}/>
+			</div>
+		</div>	
+	</section>
+		
+	<!--Footer -->
+	<Footer />
+</body>
 </html>
